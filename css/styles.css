@@ -160,7 +160,7 @@ button:focus {
   background: var(--active-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+  }
 
 /* mosaic */
 
@@ -190,7 +190,7 @@ button:focus {
 
 a {
   text-decoration: none;
-}
+} 
 
 .footer-address {
   font-family: Roboto;
@@ -606,8 +606,6 @@ a {
 
 .footer-logo {
   display: flex;
-  /* padding-top: 60px;
-  padding-bottom: 20px; */
   margin-top: 60px;
   margin-bottom: 20px; 
 }
@@ -1076,7 +1074,7 @@ a {
   height: 30px;
   right: 20px;
   top: 20px;
-  background: #FFFFFF;
+  background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
@@ -1231,6 +1229,17 @@ a {
   top: 8px;
 }
 
+.modal-close:hover {
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+.modal-close:hover .icon {
+  fill: var(--active-text-color);
+}
+
 .modal-title {
   font-family: Roboto;
   font-style: normal;
@@ -1275,8 +1284,6 @@ a {
 
 .comment-window {
   width: 448px;
-  min-width: 448px;
-  max-width: 448px;
   min-height: 120px;
   padding-left: 16px;
   padding-right: 16px;
@@ -1285,6 +1292,7 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  resize: vertical;
 }
 
 .order-partition {
@@ -1292,6 +1300,8 @@ a {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
   
 }
 
@@ -1304,6 +1314,7 @@ a {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1330,9 +1341,7 @@ a {
   position: relative;
 }
 
-.input-window {
-  display: block;
-}
+
 
 .input-relative .icon {
   position: absolute;
@@ -1340,13 +1349,14 @@ a {
   height: 12px;
   top: 14px;
   left: 15px;
+  cursor: pointer;
 }
 
 .input-window:hover {
   border: 1px solid var(--active-text-color);
-box-sizing: border-box;
-border-radius: 4px;
-cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .input-relative:hover .icon {
@@ -1357,12 +1367,32 @@ cursor: pointer;
   position: relative;
 }
 
-.checkbox-mod .icon {
+.icon-check {
   position: absolute;
   width: 16px;
   height: 15px;
-  top: 2px;
+  top: 0px;
   left: 0px;
 }
 
 
+
+.checkbox {
+position: relative;
+
+}
+
+
+.www {
+  color: var(--active-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+}
