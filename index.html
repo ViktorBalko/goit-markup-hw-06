@@ -315,13 +315,6 @@
       </div>
     </section>
   </main>
-
-
-
-
-
-
-
   <!-- footer -->
   <div class="footer-box">
     <div class="container">
@@ -370,15 +363,13 @@
             </li>
           </ul>
         </section>
-
-        <!-- subscribe -->
-
+      <!-- subscribe -->
        <section class="footer-subcribe-block">
          <h3 class="subscribe">Подпишитесь на рассылку</h3>
         <form>
           <label for="mail" class="subscribe-label">
             <input type="email" name="mail" id="mail" class="mail-window" placeholder="E-mail"/>
-          <button type="submit" class="subscribe-button">Подписаться
+          <button type="submit" id="" class="subscribe-button">Подписаться
             <svg class="icon">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
@@ -395,72 +386,61 @@
      <div class="modal">
       <h3 class="callback">Оставьте свои данные, мы вам перезвоним</h3>
        <form class="modal-form">
-        
+    <!-- modal-form -->   
          <!-- name -->
          <label class="username-partition">
            <p class="modal-title">Имя</p>
-           
             <div class="input-relative">
-              <input type="text" name="user-name" class="input-window"/>
+              <input type="text" name="user-name" class="input-window" required/>
             <svg class="icon">
               <use href="./images/sprite.svg#icon-modal-name"></use>
             </svg>
-            </div>
-            
+            </div>         
          </label> 
          <!-- phone -->
         <label class="username-partition">
           <p class="modal-title">Телефон</p>
-
           <div class="input-relative">
-            <input type="tel" name="user-tel" class="input-window"/>
+            <input type="tel" name="user-tel" class="input-window" required/>
           <svg class="icon">
               <use href="./images/sprite.svg#icon-modal-phone"></use>
             </svg>
           </div>
-
         </label> 
       <!-- mail --> 
-       <label class="username-partition">
+        <label class="username-partition">
            <p class="modal-title">Email</p>
-
           <div class="input-relative">
             <input type="email" name="user-email" class="input-window"/>
           <svg class="icon">
             <use href="./images/sprite.svg#icon-modal-mail"></use>
           </svg>
           </div>
-
         </label> 
       <!-- comment -->
         <label class="username-partition">
           <p class="modal-title">Комментарий</p>
-          <textarea  name="" id=""  placeholder="Введите текст" class="comment-window"></textarea>
-      </label>
+          <textarea  name="text"  placeholder="Введите текст" class="comment-window"></textarea>
+        </label>
       <!-- order -->
-          <label class="order-partition">
-            <div class="checkbox-mod">
-           <input type="checkbox" class="checkbox" required/> 
-           <svg class="icon-check">
-            <use href="./images/sprite.svg#icon-checkbox"></use>
-          </svg>
+        <label class="order-partition">
+          <div class="checkbox-mod">
+            <input type="checkbox" class="checkbox" required/> 
+            <span class="check-check"></span>
           </div>
-            <p class="agreement">Соглашаюсь с рассылкой и принимаю 
-              <a href="" class="www">Условия договора</a></p>
-          </label>
-            <button class="button-send">Отправить</button> 
-
-            
-
+          <p class="agreement">Соглашаюсь с рассылкой и принимаю 
+            <a href="" class="agreement-link">Условия договора</a>
+          </p>
+        </label>
+        <button class="button-send">Отправить</button> 
        </form>
 
-       <!-- button-close -->
+    <!-- button-close -->
        <button class="modal-close" data-modal-close>
         <svg class="icon">
           <use href="./images/sprite.svg#icon-modal-close"></use>
         </svg>
       </button>
-
      </div>
    </div>
    
