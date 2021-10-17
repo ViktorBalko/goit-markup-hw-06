@@ -129,7 +129,7 @@ a[href^="tel"] {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1px;
 }
 
 a[href^="mailto"]:hover,
@@ -160,7 +160,8 @@ button:focus {
   background: var(--active-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
+  transition: ease-in 0.9s;
+}
 
 /* mosaic */
 
@@ -190,7 +191,7 @@ button:focus {
 
 a {
   text-decoration: none;
-} 
+}
 
 .footer-address {
   font-family: Roboto;
@@ -255,11 +256,13 @@ a {
   background: var(--active-text-color);
   border-radius: 4px;
   border: none;
+  transition: ease-in 0.3s;
 }
 
 .btn-order:hover,
 .btn-order:focus {
   background-color: var(--active-btn-order);
+  transition: ease-in 0.3s;
   border-radius: 4px;
   border: none;
 }
@@ -450,8 +453,6 @@ a {
   padding-bottom: 10px;
 }
 
-
-
 .main-hero {
   text-align: center;
   margin-left: auto;
@@ -601,13 +602,12 @@ a {
 
 .footer {
   display: flex;
-  
 }
 
 .footer-logo {
   display: flex;
   margin-top: 60px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -687,7 +687,6 @@ a {
   margin-bottom: 30px;
 }
 
-
 .mosaic-tile h3 {
   padding-top: 20px;
   padding-bottom: 4px;
@@ -728,6 +727,7 @@ a {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  transition: ease-out 0.9s;
 }
 
 .section-hero button {
@@ -738,7 +738,6 @@ a {
 }
 
 /* HomeWork #4 */
-
 
 .team-social {
   display: inline-flex;
@@ -786,7 +785,7 @@ a {
 
 .tel:focus .icon {
   stroke: var(--active-text-color);
-} 
+}
 
 .mail .icon {
   width: 16px;
@@ -804,7 +803,6 @@ a {
   display: inline-flex;
   align-items: center;
 }
-
 
 .link-item:hover .icon {
   stroke: var(--active-text-color);
@@ -869,7 +867,6 @@ a {
   border: 1px solid var(--main-icon-color);
 }
 
-
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--active-text-color);
@@ -882,7 +879,7 @@ a {
 
 .clients-box li + li {
   margin-left: 30px;
-} 
+}
 
 /* 
 .clients-item {
@@ -904,7 +901,6 @@ a {
 }
 
 .join {
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -920,7 +916,7 @@ a {
   padding-bottom: 20px;
   text-transform: uppercase;
   color: var(--white-color);
-} 
+}
 
 .footer-social-block {
   display: inline-block;
@@ -949,6 +945,7 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: ease-in 0.6s;
   background-color: var(--main-footer-social-icon-color);
 }
 
@@ -960,6 +957,7 @@ a {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--active-text-color);
+  transition: ease-in 0.6s;
 }
 
 .footer-social-item:nth-child(n + 2) {
@@ -967,10 +965,9 @@ a {
   margin-left: 0px;
 }
 
+/* Домашнее задание #5 */
 
-/* зомашнее задание #5 */
-
-  /* activity */
+/* activity */
 .activity-img {
   position: relative;
 }
@@ -1003,7 +1000,7 @@ a {
   padding-bottom: 27px;
 }
 
-  /* nav-button */
+/* nav-button */
 .nav-button::after {
   position: relative;
   top: 28px;
@@ -1012,7 +1009,7 @@ a {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--white-color); 
+  background-color: var(--white-color);
 }
 
 .nav-button:hover:after,
@@ -1024,14 +1021,14 @@ a {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--active-text-color); 
+  background-color: var(--active-text-color);
 }
 
-  /* backdrop */
+/* backdrop */
 
 .backdrop.is-hidden {
   opacity: 0;
- /*  visibility: hidden;  */
+  /*  visibility: hidden;  */
   pointer-events: none;
   z-index: 100;
 }
@@ -1040,7 +1037,7 @@ a {
   position: fixed;
   opacity: 1;
   transition: opacity 700ms ease-in-out;
-  top:0;
+  top: 0;
   left: 0;
   background-color: var(--background-modal-color);
   width: 100%;
@@ -1061,7 +1058,8 @@ a {
   max-width: 528px;
   min-height: 581px;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
 }
 
@@ -1080,7 +1078,6 @@ a {
   box-sizing: border-box;
 }
 
-
 .callback {
   display: flex;
   justify-content: center;
@@ -1090,7 +1087,7 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
-  
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1099,7 +1096,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-} 
+}
 
 .modal-close .icon {
   width: 11px;
@@ -1133,19 +1130,17 @@ a {
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
 
-  transition: transform 1100ms cubic-bezier(.52,.21,.44,.86);
-  transform: translateX(-100%); 
+  transition: transform 1100ms cubic-bezier(0.52, 0.21, 0.44, 0.86);
+  transform: translateX(-100%);
 }
 
 .mosaic-link:hover .mosaic-hover-text,
 .mosaic-link:focus .mosaic-hover-text {
-  transition: transform 1100ms cubic-bezier(.52,.21,.44,.86);
+  transition: transform 1100ms cubic-bezier(0.52, 0.21, 0.44, 0.86);
   transform: translateX(0);
 }
 
-
 /* home-work #6 */
-
 
 .footer-subscribe-block {
   display: flex;
@@ -1169,7 +1164,6 @@ a {
   color: var(--white-color);
 }
 
-
 .mail-window {
   width: 358px;
   height: 50px;
@@ -1187,6 +1181,12 @@ a {
   fill: #eeeeee;
   top: 13px;
   right: 28px;
+  transition: ease-out 2.5s;
+}
+
+.subscribe-button:hover .icon {
+  transition: ease-out 17s;
+  transform: translate(300px, -150px);
 }
 
 .subscribe-button {
@@ -1208,8 +1208,15 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white-color);
-} 
+  overflow: hidden;
+  transition: ease 2.5s;
+}
 
+.subscribe-button:hover {
+  letter-spacing: 4px;
+
+  transition: ease-out 2.5s;
+}
 
 .subscribe-label {
   display: flex;
@@ -1290,7 +1297,6 @@ a {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  
 }
 
 .button-send {
@@ -1303,13 +1309,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 .button-send:hover {
-  background: #188CE8;
+  background: #188ce8;
   color: var(--white-color);
 }
 
@@ -1339,7 +1345,7 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration-line: underline; 
+  text-decoration-line: underline;
 }
 
 .input-relative {
@@ -1363,7 +1369,7 @@ a {
 }
 
 .input-relative:hover .icon {
-  fill: var(--active-text-color); 
+  fill: var(--active-text-color);
 }
 
 /* CHECKBOX */
@@ -1394,7 +1400,7 @@ a {
   background-image: url(../images/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .checkbox:checked {
@@ -1409,6 +1415,4 @@ a {
   background-origin: border-box;
   background-size: contain;
   background-repeat: no-repeat;
-  
 }
-
