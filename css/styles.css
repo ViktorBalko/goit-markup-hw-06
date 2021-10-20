@@ -117,6 +117,14 @@ li {
   padding-bottom: 32px;
 }
 
+.current {
+  color: red;
+}
+
+.current::after {
+  color: red;
+}
+
 .nav-button:hover,
 .nav-button:focus {
   color: var(--active-text-color);
